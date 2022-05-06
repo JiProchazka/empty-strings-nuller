@@ -1,6 +1,6 @@
 {
   "name": "empty-strings-nuller",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Replaces object empty strings with null",
   "main": "index.js",
   "types": "index.d.ts",
@@ -8,7 +8,6 @@
     "type": "git",
     "url": "https://github.com/jiprochazka/empty-strings-nuller"
   },
-  "type": "module",
   "author": "Jiří Procházka",
   "license": "ISC",
   "dependencies": {
