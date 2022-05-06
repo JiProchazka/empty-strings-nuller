@@ -1,14 +1,15 @@
 const isPlainObject = require("lodash.isplainobject");
+const isString = require("lodash.isstring");
 const transform = require("lodash.transform");
 
-module.exports = function nullEmptyStrings(object) {
+export default function nullEmptyStrings(object) {
   // is array
   if (Array.isArray(object)) {
     return object.map((obj) => nullEmptyStrings(obj));
   } // is a plain object
   else if (isPlainObject(object)) {
     return transform(object, (result, value, key) => {
-      if (value.trim() === "") {
+      if (isString(value) && value.trim() === "") {
         value = null;
       }
 
@@ -22,4 +23,4 @@ module.exports = function nullEmptyStrings(object) {
   else {
     return object;
   }
-};
+}

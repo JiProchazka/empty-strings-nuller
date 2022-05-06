@@ -1,16 +1,19 @@
 {
   "name": "empty-strings-nuller",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Replaces object empty strings with null",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiprochazka/empty-strings-nuller"
   },
   "type": "module",
   "author": "Jiří Procházka",
   "license": "ISC",
   "dependencies": {
     "lodash.isplainobject": "^4.0.6",
+    "lodash.isstring": "^4.0.1",
     "lodash.transform": "^4.6.0"
   }
 }

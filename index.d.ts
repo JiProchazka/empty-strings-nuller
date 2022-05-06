@@ -1,1 +1,1 @@
-export declare function nullEmptyStrings<T>(object: T): T;
+export default function nullEmptyStrings<T>(object: T): T;
