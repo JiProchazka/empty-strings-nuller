@@ -1,6 +1,6 @@
-const isPlainObject = require("lodash.isplainobject");
-const isString = require("lodash.isstring");
-const transform = require("lodash.transform");
+import { isPlainObject } from "lodash.isplainobject";
+import { isString } from "lodash.isstring";
+import { transform } from "lodash.transform";
 
 export default function nullEmptyStrings(object) {
   // is array
